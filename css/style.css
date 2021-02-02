@@ -38,6 +38,8 @@
   --basic-black-opacity: rgba(0, 0, 0, 0.3);
   --basic-black: #000000;
 
+  --basic-circle-gray: #e1e1e1;
+
   --hover-extra-white: #dfdfdf;
   --active-extra-white: #d5d5d5;
   --focus-extra-white: #dbdbdb;
@@ -81,6 +83,10 @@ img {
   height: auto;
 }
 
+ul {
+  list-style: none;
+}
+
 /* Main navigation */
 
 .main-header-logo:active path {
@@ -97,27 +103,23 @@ img {
   background-color: var(--basic-extra-white);
 }
 
-.site-nav {
-  list-style: none;
-}
-
-.site-nav a,
+.site-nav .link,
 .cart {
   color: var(--basic-black);
 }
 
-.site-nav a:hover,
+.site-nav .link:hover,
 .cart:hover {
   color: var(--basic-red);
 }
 
-.site-nav a:focus,
+.site-nav .link:focus,
 .cart:focus {
   color: var(--basic-black);
   border-bottom: 2px solid var(--basic-red);
 }
 
-.site-nav a:active,
+.site-nav .link:active,
 .cart:active {
   color: var(--basic-black-opacity);
 
@@ -127,18 +129,17 @@ img {
 
 .features {
   background-color: var(--basic-extra-white);
-
 }
 
-.features-list {
-  list-style: none;
-}
-
-.feature-item h3 {
+.feature-item .title {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
   color: var(--basic-black);
+}
+
+.feature-item .text {
+  line-height: 24px;
 }
 
 
@@ -198,10 +199,6 @@ img {
   border-bottom: 2px solid var(--basic-extra-white);
 }
 
-.services-items {
-  list-style: none;
-}
-
 .service-item:nth-child(1) figure {
   background-color: var(--basic-red);
 }
@@ -214,12 +211,16 @@ img {
   background-color: var(--basic-yellow);
 }
 
-.service-item h3 {
+.service-item .title {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
   font-weight: 700;
   color: var(--basic-black);
+}
+
+.service-item .text {
+  line-height: 24px;
 }
 
 /* About */
@@ -228,25 +229,30 @@ img {
   border-bottom: 2px solid var(--basic-extra-white);
 }
 
-.about-column-left span {
+.about-column-left .caption {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
 }
 
-.about-column-left b {
+.about-column-left .list-title {
   font-weight: 700;
   text-transform: uppercase;
+  line-height: 24px;
 }
 
-.about-column-left-list {
-  list-style: none;
+.about-column-left .text {
+  line-height: 24px;
 }
 
+.about-column-left-list li {
+  line-height: 24px;
+}
 
-.about-column-right b {
+.about-column-right .list-title {
   font-weight: 700;
   text-transform: uppercase;
+  line-height: 24px;
 }
 
 .about-column-right-list dt {
@@ -284,19 +290,15 @@ img {
   border-bottom: 2px solid var(--basic-extra-white);
 }
 
-.partners-list {
-  list-style: none;
-}
-
 /* Map */
 
-.contacts b {
+.contacts .caption {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
 }
 
-.contacts p,
+.contacts .address,
 .phone {
   line-height: 18px;
   color: var(--basic-gray);
@@ -304,47 +306,50 @@ img {
 
 /* Social */
 
-.social-list {
-  list-style: none;
-}
-
-.social span {
+.social .caption {
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
 }
 
-.social p {
+.social .text {
   line-height: 22px;
 }
 
-.social-vk path:nth-child(1):hover,
-.social-vk path:nth-child(2):hover,
-.social-fb path:nth-child(1):hover,
-.social-fb path:nth-child(2):hover,
-.social-inst path:nth-child(1):hover,
-.social-inst path:nth-child(2):hover {
-  fill: var(--hover-red);
+.social-item {
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+  background: var(--basic-circle-gray) no-repeat center;
 }
 
-.social-vk path:nth-child(1):active,
-.social-vk path:nth-child(2):active,
-.social-fb path:nth-child(1):active,
-.social-fb path:nth-child(2):active,
-.social-inst path:nth-child(1):active,
-.social-inst path:nth-child(2):active {
-  fill: var(--active-red);
+.social-link {
+  font-size: 0;
 }
 
-.social-vk path:last-child:active,
-.social-fb path:last-child:active,
-.social-inst path:last-child:active {
-  fill-opacity: 0.3;
+.vk {
+  background-image: url(../img/decor/vk-icon.svg);
+}
+
+.fb {
+  background-image: url(../img/decor/fb-icon.svg);
+}
+
+.inst {
+  background-image: url(../img/decor/insta-icon.svg);
+}
+
+.social-item:hover {
+  background-color: var(--hover-red);
+}
+
+.social-item:active {
+  background-color: var(--active-red);
 }
 
 /* Modal */
 
-.modal h2 {
+.modal .title {
   font-size: 45px;
   line-height: 52.73px;
 }
@@ -353,7 +358,6 @@ img {
   line-height: 18px;
   font-weight: 700;
 }
-
 
 .modal-form-item input,
 .modal-form-item textarea {
