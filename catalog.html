@@ -41,14 +41,14 @@
 
   <main>
 
-    <h1 class="main-title ">Магазин готовых шаблонов</h1>
+    <h1 class="main-title">Магазин готовых шаблонов</h1>
 
     <div class="inner-grid container">
-      <section>
-        <h2>Фильтр шаблонов</h2>
+      <section class="filter">
+        <h2 class="hidden">Фильтр шаблонов</h2>
         <form method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
-            <legend>Стоимость:</legend>
+          <fieldset class="filter-group">
+            <legend class="filter-group-title">Стоимость:</legend>
             <input type="range" name="rangeprice">
             <label>
               От <input type="text">
@@ -57,132 +57,143 @@
               До <input type="text">
             </label>
           </fieldset>
-          <fieldset>
-            <legend>Сетка:</legend>
+          <fieldset class="filter-group">
+            <legend class="filter-group-title">Сетка:</legend>
             <ul>
               <li>
                 <label>
-                  <input type="radio" name="radiogrid" value="adap" checked> Адаптивная
+                  <input class="filter-group-item" type="radio" name="radiogrid" value="adap" checked> Адаптивная
                 </label>
               </li>
               <li>
                 <label>
-                  <input type="radio" name="radiogrid" value="fix"> Фиксированная
+                  <input class="filter-group-item" type="radio" name="radiogrid" value="fix"> Фиксированная
                 </label>
               </li>
               <li>
                 <label>
-                  <input type="radio" name="radiogrid" value="rub"> Резиновая
+                  <input class="filter-group-item" type="radio" name="radiogrid" value="rub"> Резиновая
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>Особенности:</legend>
+          <fieldset class="filter-group">
+            <legend class="filter-group-title">Особенности:</legend>
             <ul>
               <li>
                 <label>
-                  <input type="checkbox" name="slider" checked> Слайдер
+                  <input class="filter-group-item" type="checkbox" name="slider" checked> Слайдер
                 </label>
               </li>
               <li>
                 <label>
-                  <input type="checkbox" name="advant"> Блок преимуществ
+                  <input class="filter-group-item" type="checkbox" name="advant"> Блок преимуществ
                 </label>
               </li>
               <li>
                 <label>
-                  <input type="checkbox" name="news" checked> Новости
+                  <input class="filter-group-item" type="checkbox" name="news" checked> Новости
                 </label>
               </li>
               <li>
                 <label>
-                  <input type="checkbox" name="gallery"> Галерея
+                  <input class="filter-group-item" type="checkbox" name="gallery"> Галерея
                 </label>
               </li>
               <li>
                 <label>
-                  <input type="checkbox" name="basket"> Корзина
+                  <input class="filter-group-item" type="checkbox" name="basket"> Корзина
                 </label>
               </li>
             </ul>
           </fieldset>
-          <button type="submit">Показать</button>
+          <button class="btn-catalog" type="submit">Показать</button>
         </form>
       </section>
 
-      <section>
-        <h2>Шаблоны</h2>
-        <fieldset>
-          <legend>Сортировать:</legend>
-          <input type="button" value="По цене">
-          <input type="button" value="По типу" disabled>
-          <input type="button" value="По названию" disabled>
-          <input type="button" value="От большего к меньшему">
-          <input type="button" value="От меньшего к большему" disabled>
-        </fieldset>
+      <section class="patterns">
+        <h2 class="hidden">Шаблоны</h2>
+        <h3 class="filter-group-title">Сортировать:</h3>
+        <form class="sort" method="POST" action="https://echo.htmlacademy.ru">
+          <ul>
+            <li>
+              <label class="sort-item">
+                <input type="radio" name="radiosort" value="price">ПО ЦЕНЕ
+              </label>
+            </li>
+            <li>
+              <label class="sort-item sort-item-disabled">
+                <input type="radio" name="radiosort" value="type">ПО ТИПУ
+              </label>
+            </li>
+            <li>
+              <label class="sort-item sort-item-disabled">
+                <input type="radio" name="radiosort" value="name">ПО НАЗВАНИЮ
+              </label>
+            </li>
+        </form>
         <ul class="patterns-list">
           <li class="pattern-item">
-            <img src="img/content/img-sedona.jpg" width="358" height="578">
+            <img src="img/content/img-sedona.jpg" width="358" height="578" alt="">
             <div>
-              <h3>Sedona</h3>
+              <h3 class="pattern-item-title">Sedona</h3>
               <p class="pattern-info">Информационный сайт для туристов</p>
               <button class="btn btn-pattern" type="button">9900 ₽</button>
             </div>
           </li>
           <li class="pattern-item">
-            <img src="img/content/img-pink.jpg" width="358" height="578">
+            <img src="img/content/img-pink.jpg" width="358" height="578" alt="">
             <div>
-              <h3>Pink App</h3>
-              <p class="pattern-info">Продуктовый лендинг приложения для IOS и Android</p>
+              <h3 class="pattern-item-title">Pink App</h3>
+              <p class="pattern-item-info">Продуктовый лендинг приложения для IOS и Android</p>
               <button class="btn btn-pattern" type="button">9900 ₽</button>
             </div>
           </li>
           <li class="pattern-item">
-            <img src="img/content/img-barbershop.jpg" width="358" height="578">
+            <img src="img/content/img-barbershop.jpg" width="358" height="578" alt="">
             <div>
-              <h3>Barbershop</h3>
-              <p class="pattern-info">Сайт салона красоты. Для мужчин, да.</p>
+              <h3 class="pattern-item-title">Barbershop</h3>
+              <p class="pattern-item-info">Сайт салона красоты. Для мужчин, да.</p>
               <button class="btn btn-pattern" type="button">9900 ₽</button>
             </div>
           </li>
           <li class="pattern-item">
-            <img src="img/content/img-mishka.png" width="358" height="578">
+            <img src="img/content/img-mishka.png" width="358" height="578" alt="">
             <div>
-              <h3>Mishka</h3>
-              <p class="pattern-info">Интернет-магазин вязаных игрушек</p>
+              <h3 class="pattern-item-title">Mishka</h3>
+              <p class="pattern-item-info">Интернет-магазин вязаных игрушек</p>
               <button class="btn btn-pattern" type="button">9900 ₽</button>
             </div>
           </li>
           <li class="pattern-item">
-            <img src="img/content/img-aplus.png" width="358" height="578">
+            <img src="img/content/img-aplus.png" width="358" height="578" alt="">
             <div>
-              <h3>A Plus</h3>
-              <p class="pattern-info">Лендинг курсов повышения квалификации</p>
+              <h3 class="pattern-item-title">A Plus</h3>
+              <p class="pattern-item-info">Лендинг курсов повышения квалификации</p>
               <button class="btn btn-pattern" type="button">9900 ₽</button>
             </div>
           </li>
           <li class="pattern-item">
-            <img src="img/content/img-kvast.jpg" width="358" height="578">
+            <img src="img/content/img-kvast.jpg" width="358" height="578" alt="">
             <div>
-              <h3>Кваст</h3>
-              <p class="pattern-info">Промо-сайт производителя крафтового кваса</p>
+              <h3 class="pattern-item-title">Кваст</h3>
+              <p class="pattern-item-info">Промо-сайт производителя крафтового кваса</p>
               <button class="btn btn-pattern" type="button">9900 ₽</button>
             </div>
           </li>
         </ul>
         <ul>
           <li>
-            <a>1</a>
+            <button class="btn-catalog btn-catalog-disabled">1</button>
           </li>
           <li>
-            <a href="#">2</a>
+            <button class="btn-catalog" href="#">2</button>
           </li>
           <li>
-            <a href="#">3</a>
+            <button class="btn-catalog" href="#">3</button>
           </li>
           <li>
-            <a href="#">Следующая</a>
+            <button class="btn-catalog" href="#">Следующая</button>
           </li>
         </ul>
       </section>

@@ -207,6 +207,29 @@ ul {
   line-height: 24px;
 }
 
+/* Filter */
+
+.filter {
+  margin-top: 55px;
+}
+
+.filter-group {
+  border: 0;
+}
+
+.filter-group-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.filter-group-item {
+  line-height: 20px;
+  color: var(--basic-dark);
+}
 
 /* Buttons */
 
@@ -231,7 +254,7 @@ ul {
 .btn:active {
   background-color: var(--active-red);
   color: var(--basic-white-opacity);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .btn-services-apps {
@@ -260,6 +283,19 @@ ul {
 
 .btn-pattern:focus {
   color: var(--basic-white)
+}
+
+.btn-catalog {
+  line-height: 18px;
+  font-weight: 500;
+  background-color: var(--basic-extra-white);
+  border-color: var(--basic-extra-white);
+  border-radius: 3px;
+}
+
+.btn-catalog-disabled {
+  background-color: var(--basic-white);
+  border-color: var(--focus-extra-white);
 }
 
 /* Services */
@@ -384,6 +420,10 @@ figure {
 
 /* Patterns */
 
+.patterns {
+  margin-top: 50px;
+}
+
 .patterns-list {
   display: flex;
   flex-wrap: wrap;
@@ -397,8 +437,28 @@ figure {
   margin-left: 40px;
 }
 
-.pattern-info {
+.pattern-item-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.pattern-item-info {
   width: 255px;
+  line-height: 18px;
+  color: var(--basic-gray);
+}
+
+.sort-item {
+  color: var(--basic-black);
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.sort-item-disabled {
+  opacity: 0.3;
 }
 
 /* Map */
