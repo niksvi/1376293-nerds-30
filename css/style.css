@@ -94,6 +94,10 @@ ul {
   padding: 0;
 }
 
+figure {
+  margin: 0;
+}
+
 /* Container */
 
 .container {
@@ -116,6 +120,10 @@ ul {
 
 /* Main navigation */
 
+.main-header-logo {
+  margin-top: 49px;
+}
+
 .main-header-logo-svg:active path {
   fill: var(--basic-light-gray);
 }
@@ -135,6 +143,7 @@ ul {
 .site-nav {
   display: flex;
   justify-self: center;
+  margin-top: 75px;
 }
 
 .site-nav .link {
@@ -148,6 +157,10 @@ ul {
 .site-nav .link,
 .cart {
   color: var(--basic-black);
+}
+
+.cart {
+  margin-top: 75px;
 }
 
 .cart img {
@@ -300,22 +313,22 @@ ul {
 
 /* Services */
 
-.services {
+.services-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  margin-right: 100px;
   margin-bottom: 80px;
 }
 
-.services-items {
-  display: grid;
-  grid-template-columns: repeat(3, 300px);
-  column-gap: 100px;
+.service-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .service-item:nth-child(1) figure {
   background-color: var(--basic-red);
-}
-
-figure {
-  margin: 0;
 }
 
 .service-item:nth-child(2) figure {
@@ -345,6 +358,10 @@ figure {
   grid-template-columns: auto 360px;
 }
 
+.about-column-left {
+  margin-top: 73px;
+}
+
 .about-column-left .caption {
   font-size: 45px;
   line-height: 45px;
@@ -365,23 +382,43 @@ figure {
   line-height: 24px;
 }
 
+.about-column-right {
+  margin-top: 39px;
+  margin-bottom: 75px;
+}
+
 .about-column-right .list-title {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 24px;
+  color: var(--basic-black);
 }
 
-.about-column-right-list dt {
+.about-column-right-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.list-column {
+  max-width: 98px;
+}
+
+.list-column li:last-child {
   line-height: 18px;
+  margin: 0;
+  color: var(--basic-dark);
 }
 
-.about-column-right-list dd {
+.list-column li:first-child {
   font-size: 45px;
   line-height: 64px;
   font-weight: 700;
+  margin: 0;
+  color: var(--basic-black);
 }
 
-.about-column-right-list .procent {
+.list-column .procent {
   font-size: 26px;
   line-height: 40px;
   font-weight: 700;
@@ -461,6 +498,18 @@ figure {
   opacity: 0.3;
 }
 
+.patterns-pagination {
+  display: flex;
+}
+
+.patterns-pagination-item {
+  margin-right: 11px;
+}
+
+.patterns-pagination-item:last-child {
+  margin-right: 0;
+}
+
 /* Map */
 
 .contacts .caption {
@@ -475,6 +524,10 @@ figure {
   color: var(--basic-gray);
 }
 
+.map-pic {
+  width: 100%;
+}
+
 /* Social */
 
 .social {
@@ -485,6 +538,11 @@ figure {
 
 .social-col {
   align-self: center;
+}
+
+.social-list {
+  display: flex;
+  margin: 68px 0;
 }
 
 .social .caption {
@@ -502,6 +560,11 @@ figure {
   height: 81px;
   border-radius: 50%;
   background: var(--basic-circle-gray) no-repeat center;
+  margin-right: 9px;
+}
+
+.social-item:last-child {
+  margin-right: 0;
 }
 
 .social-link {
