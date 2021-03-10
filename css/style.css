@@ -39,6 +39,7 @@
   --basic-black: #000000;
 
   --basic-circle-gray: #e1e1e1;
+  --bacic-toggle-gray: #ababab;
 
   --hover-extra-white: #dfdfdf;
   --active-extra-white: #d5d5d5;
@@ -260,7 +261,14 @@ figure {
 }
 
 .filter-group {
-  border: 0;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
 }
 
 .filter-group-title {
@@ -272,9 +280,75 @@ figure {
   margin: 0;
 }
 
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: var(--basic-extra-white);
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background-color: var(--border-gray-normal);
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background-color: var(--basic-green);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: var(--bacic-toggle-gray);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-controls label {
+  text-transform: uppercase;
+  line-height: 22px;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--basic-extra-white);
+  font-family: inherit;
+  font-style: inherit;
+}
+
 .filter-group-item {
   line-height: 20px;
-  color: var(--basic-dark);
+  color: var(--border-gray-normal);
 }
 
 /* Buttons */

@@ -48,65 +48,81 @@
         <form method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="filter-group">
             <legend class="filter-group-title">Стоимость:</legend>
-            <input type="range" name="rangeprice">
-            <label>
-              От <input type="text">
-            </label>
-            <label>
-              До <input type="text">
-            </label>
-          </fieldset>
-          <fieldset class="filter-group">
-            <legend class="filter-group-title">Сетка:</legend>
-            <ul>
-              <li>
-                <label>
-                  <input class="filter-group-item" type="radio" name="radiogrid" value="adap" checked> Адаптивная
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="
+                    width: 30%;
+                    margin-left: 20%;
+                    "></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0" style="
+                  left: 20%;
+                  "></div>
+                <div class="toggle toggle-max" tabindex="0" style="
+                  left: 50%;
+                  "></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  от <input type="text" name="min-price" value="0">
                 </label>
-              </li>
-              <li>
-                <label>
-                  <input class="filter-group-item" type="radio" name="radiogrid" value="fix"> Фиксированная
+                <label class="max-price">
+                  до <input type="text" name="max-price" value="15000">
                 </label>
-              </li>
-              <li>
-                <label>
-                  <input class="filter-group-item" type="radio" name="radiogrid" value="rub"> Резиновая
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="filter-group">
-            <legend class="filter-group-title">Особенности:</legend>
-            <ul>
-              <li>
-                <label>
-                  <input class="filter-group-item" type="checkbox" name="slider" checked> Слайдер
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input class="filter-group-item" type="checkbox" name="advant"> Блок преимуществ
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input class="filter-group-item" type="checkbox" name="news" checked> Новости
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input class="filter-group-item" type="checkbox" name="gallery"> Галерея
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input class="filter-group-item" type="checkbox" name="basket"> Корзина
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="btn-catalog" type="submit">Показать</button>
+              </div>
+            </div>
+            <fieldset class="filter-group">
+              <legend class="filter-group-title">Сетка:</legend>
+              <ul>
+                <li>
+                  <label>
+                    <input class="filter-group-item" type="radio" name="radiogrid" value="adap" checked> Адаптивная
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="filter-group-item" type="radio" name="radiogrid" value="fix"> Фиксированная
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="filter-group-item" type="radio" name="radiogrid" value="rub"> Резиновая
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter-group">
+              <legend class="filter-group-title">Особенности:</legend>
+              <ul>
+                <li>
+                  <label>
+                    <input class="filter-group-item" type="checkbox" name="slider" checked> Слайдер
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="filter-group-item" type="checkbox" name="advant"> Блок преимуществ
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="filter-group-item" type="checkbox" name="news" checked> Новости
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="filter-group-item" type="checkbox" name="gallery"> Галерея
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="filter-group-item" type="checkbox" name="basket"> Корзина
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="btn-catalog" type="submit">Показать</button>
         </form>
       </section>
 
