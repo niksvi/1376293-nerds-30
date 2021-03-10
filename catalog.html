@@ -72,57 +72,58 @@
                 </label>
               </div>
             </div>
-            <fieldset class="filter-group">
-              <legend class="filter-group-title">Сетка:</legend>
-              <ul>
-                <li>
-                  <label>
-                    <input class="filter-group-item" type="radio" name="radiogrid" value="adap" checked> Адаптивная
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input class="filter-group-item" type="radio" name="radiogrid" value="fix"> Фиксированная
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input class="filter-group-item" type="radio" name="radiogrid" value="rub"> Резиновая
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="filter-group">
-              <legend class="filter-group-title">Особенности:</legend>
-              <ul>
-                <li>
-                  <label>
-                    <input class="filter-group-item" type="checkbox" name="slider" checked> Слайдер
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input class="filter-group-item" type="checkbox" name="advant"> Блок преимуществ
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input class="filter-group-item" type="checkbox" name="news" checked> Новости
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input class="filter-group-item" type="checkbox" name="gallery"> Галерея
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input class="filter-group-item" type="checkbox" name="basket"> Корзина
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <button class="btn-catalog" type="submit">Показать</button>
+          </fieldset>
+          <fieldset class="filter-group">
+            <legend class="filter-group-title">Сетка:</legend>
+            <ul>
+              <li class="filter-option filter-radio">
+                <input id="filter-adap" class="filter-input-radio filter-input visually-hidden" type="radio"
+                  name="radiogrid" value="adap" checked>
+                <label for="filter-adap">Адаптивная</label>
+              </li>
+              <li class="filter-option filter-radio">
+                <input id="filter-fix" class="filter-input-radio filter-input visually-hidden" type="radio"
+                  name="radiogrid" value="fix">
+                <label for="filter-fix">Фиксированная</label>
+              </li>
+              <li class="filter-option filter-radio">
+                <input id="filter-rub" class="filter-input-radio filter-input visually-hidden" type="radio"
+                  name="radiogrid" value="rub">
+                <label for="filter-rub">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-group">
+            <legend class="filter-group-title">Особенности:</legend>
+            <ul>
+              <li class="filter-option filter-checkbox">
+                <input id="filter-slider" class="filter-input-checkbox filter-input visually-hidden" type="checkbox"
+                  name="slider" checked>
+                <label for="filter-slider">Слайдер</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input id="filter-features" class="filter-input-checkbox filter-input visually-hidden" type="checkbox"
+                  name="advant">
+                <label for="filter-features">Блок преимуществ</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input id="filter-news" class="filter-input-checkbox filter-input visually-hidden" type="checkbox"
+                  name="news" checked>
+                <label for="filter-news">Новости</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input id="filter-gallery" class="filter-input-checkbox filter-input visually-hidden" type="checkbox"
+                  name="gallery">
+                <label for="filter-gallery">Галерея</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input id="filter-cart" class="filter-input-checkbox filter-input visually-hidden" type="checkbox"
+                  name="basket">
+                <label for="filter-cart">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="btn btn-catalog btn-submit" type="submit">Показать</button>
         </form>
       </section>
 
@@ -200,16 +201,16 @@
         </ul>
         <ul class="patterns-pagination">
           <li class="patterns-pagination-item">
-            <button class="btn-catalog btn-catalog-disabled">1</button>
+            <button class="btn btn-catalog btn-pagination btn-pagination-active">1</button>
           </li>
           <li class="patterns-pagination-item">
-            <button class="btn-catalog">2</button>
+            <button class="btn btn-catalog btn-pagination">2</button>
           </li>
           <li class="patterns-pagination-item">
-            <button class="btn-catalog">3</button>
+            <button class="btn btn-catalog btn-pagination">3</button>
           </li>
           <li class="patterns-pagination-item">
-            <button class="btn-catalog">Следующая</button>
+            <button class="btn btn-catalog btn-next">Следующая</button>
           </li>
         </ul>
       </section>
@@ -224,7 +225,7 @@
         <span class="caption">NЁRDS DESIGN STUDIO</span>
         <p class="address">
           191186, Санкт-Петербург, <br>
-          ул. Б. Конюшенная, д. 19/8 <br>
+          ул. Б. Конюшенная, д. 19/8 <br><br>
           <a class="phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
         </p>
         <a class="btn btn-write-us" href="#">Напишите нам</a>
