@@ -129,73 +129,96 @@
 
       <section class="patterns">
         <h2 class="visually-hidden">Шаблоны</h2>
-        <h3 class="filter-group-title">Сортировать:</h3>
         <form class="sort" method="POST" action="https://echo.htmlacademy.ru">
-          <ul>
-            <li>
-              <label class="sort-item">
-                <input type="radio" name="radiosort" value="price">ПО ЦЕНЕ
-              </label>
-            </li>
-            <li>
-              <label class="sort-item sort-item-disabled">
-                <input type="radio" name="radiosort" value="type">ПО ТИПУ
-              </label>
-            </li>
-            <li>
-              <label class="sort-item sort-item-disabled">
-                <input type="radio" name="radiosort" value="name">ПО НАЗВАНИЮ
-              </label>
-            </li>
-          </ul>
+          <div>
+            <span class="filter-group-title">Сортировать:</span>
+            <ul class="sort-list">
+              <li class="sort-item">
+                <input class="sort-radio visually-hidden" id="sort-price" type="radio" name="radiosort" value="price"
+                  checked>
+                <label for="sort-price">ПО ЦЕНЕ</label>
+              </li>
+              <li class="sort-item">
+                <input class="sort-radio visually-hidden" id="sort-type" type="radio" name="radiosort" value="type">
+                <label for="sort-type">ПО ТИПУ</label>
+              </li>
+              <li class="sort-item">
+                <input class="sort-radio visually-hidden" id="sort-name" type="radio" name="radiosort" value="name">
+                <label for="sort-name">ПО НАЗВАНИЮ</label>
+              </li>
+              <li class="sort-item-arrow">
+                <input class="sort-radio-arrow visually-hidden" id="sort-down" type="radio" name="sortupdown"
+                  value="down" checked>
+                <label for="sort-down">
+                  <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.5 10L0 0H11" fill="#a6a6a6" />
+                  </svg>
+                </label>
+              </li>
+              <li class="sort-item-arrow">
+                <input class="sort-radio-arrow visually-hidden" id="sort-up" type="radio" name="sortupdown" value="up">
+                <label for="sort-up">
+                  <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.5 0L0 10H11L5.5 0Z" fill="#a6a6a6" />
+                  </svg>
+                </label>
+              </li>
+            </ul>
+          </div>
         </form>
         <ul class="patterns-list">
           <li class="pattern-item">
-            <img src="img/content/img-sedona.jpg" width="358" height="578" alt="">
-            <div>
-              <h3 class="pattern-item-title">Sedona</h3>
-              <p class="pattern-info">Информационный сайт для туристов</p>
-              <button class="btn btn-pattern" type="button">9900 ₽</button>
+            <img class="pattern-browser" src="img/decor/browser.png" width="360" height="40" alt="">
+            <img class="pattern-image" src="img/content/img-sedona.jpg" width="358" height="578" alt="">
+            <div class="pattern-description">
+              <h3 class="pattern-title">Sedona</h3>
+              <p class="pattern-info">Информационный сайт<br> для туристов</p>
+              <button class="btn btn-pattern" type="button">9 900 ₽</button>
             </div>
           </li>
           <li class="pattern-item">
-            <img src="img/content/img-pink.jpg" width="358" height="578" alt="">
-            <div>
-              <h3 class="pattern-item-title">Pink App</h3>
-              <p class="pattern-item-info">Продуктовый лендинг приложения для IOS и Android</p>
-              <button class="btn btn-pattern" type="button">9900 ₽</button>
+            <img class="pattern-browser" src="img/decor/browser.png" width="360" height="40" alt="">
+            <img class="pattern-image" src="img/content/img-pink.jpg" width="358" height="578" alt="">
+            <div class="pattern-description">
+              <h3 class="pattern-title">Pink App</h3>
+              <p class="pattern-info">Продуктовый лендинг<br> приложения для IOS и Android</p>
+              <button class="btn btn-pattern" type="button">9 900 ₽</button>
             </div>
           </li>
           <li class="pattern-item">
-            <img src="img/content/img-barbershop.jpg" width="358" height="578" alt="">
-            <div>
-              <h3 class="pattern-item-title">Barbershop</h3>
-              <p class="pattern-item-info">Сайт салона красоты. Для мужчин, да.</p>
-              <button class="btn btn-pattern" type="button">9900 ₽</button>
+            <img class="pattern-browser" src="img/decor/browser.png" width="360" height="40" alt="">
+            <img class="pattern-image" src="img/content/img-barbershop.jpg" width="358" height="578" alt="">
+            <div class="pattern-description">
+              <h3 class="pattern-title">Barbershop</h3>
+              <p class="pattern-info">Сайт салона красоты.<br> Для мужчин, да.</p>
+              <button class="btn btn-pattern" type="button">9 900 ₽</button>
             </div>
           </li>
           <li class="pattern-item">
-            <img src="img/content/img-mishka.png" width="358" height="578" alt="">
-            <div>
-              <h3 class="pattern-item-title">Mishka</h3>
-              <p class="pattern-item-info">Интернет-магазин вязаных игрушек</p>
-              <button class="btn btn-pattern" type="button">9900 ₽</button>
+            <img class="pattern-browser" src="img/decor/browser.png" width="360" height="40" alt="">
+            <img class="pattern-image" src="img/content/img-mishka.png" width="358" height="578" alt="">
+            <div class="pattern-description">
+              <h3 class="pattern-title">Mishka</h3>
+              <p class="pattern-info">Интернет-магазин<br> вязаных игрушек</p>
+              <button class="btn btn-pattern" type="button">9 900 ₽</button>
             </div>
           </li>
           <li class="pattern-item">
-            <img src="img/content/img-aplus.png" width="358" height="578" alt="">
-            <div>
-              <h3 class="pattern-item-title">A Plus</h3>
-              <p class="pattern-item-info">Лендинг курсов повышения квалификации</p>
-              <button class="btn btn-pattern" type="button">9900 ₽</button>
+            <img class="pattern-browser" src="img/decor/browser.png" width="360" height="40" alt="">
+            <img class="pattern-image" src="img/content/img-aplus.png" width="358" height="578" alt="">
+            <div class="pattern-description">
+              <h3 class="pattern-title">A Plus</h3>
+              <p class="pattern-info">Лендинг курсов повышения<br> квалификации</p>
+              <button class="btn btn-pattern" type="button">9 900 ₽</button>
             </div>
           </li>
           <li class="pattern-item">
-            <img src="img/content/img-kvast.jpg" width="358" height="578" alt="">
-            <div>
-              <h3 class="pattern-item-title">Кваст</h3>
-              <p class="pattern-item-info">Промо-сайт производителя крафтового кваса</p>
-              <button class="btn btn-pattern" type="button">9900 ₽</button>
+            <img class="pattern-browser" src="img/decor/browser.png" width="360" height="40" alt="">
+            <img class="pattern-image" src="img/content/img-kvast.jpg" width="358" height="578" alt="">
+            <div class="pattern-description">
+              <h3 class="pattern-title">Кваст</h3>
+              <p class="pattern-info">Промо-сайт производителя<br> крафтового кваса</p>
+              <button class="btn btn-pattern" type="button">9 900 ₽</button>
             </div>
           </li>
         </ul>

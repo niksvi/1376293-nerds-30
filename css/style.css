@@ -494,6 +494,8 @@ figure {
 
 .btn-pattern {
   padding: 0 72px;
+  margin-bottom: 44px;
+  margin-top: 15px;
 }
 
 .btn-pattern:focus {
@@ -746,38 +748,121 @@ figure {
 .patterns-list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .pattern-item {
   margin-bottom: 30px;
+  width: 360px;
+  height: 620px;
+  position: relative;
 }
 
 .pattern-item:nth-child(even) {
   margin-left: 40px;
 }
 
-.pattern-item-title {
+.pattern-image {
+  border: 1px solid var(--basic-extra-white);
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.pattern-item:hover .pattern-description {
+  display: block;
+}
+
+.pattern-item:hover img {
+  filter: drop-shadow(0px 6px 15px rgba(0, 0, 0, 0.25));
+}
+
+.pattern-item:hover .pattern-browser {
+  opacity: 1;
+}
+
+.pattern-browser {
+  margin-bottom: -7px;
+  opacity: 0.12;
+}
+
+.pattern-description {
+  display: none;
+  width: 360px;
+  background-color: var(--basic-extra-white);
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.pattern-title {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   color: var(--basic-black);
   text-transform: uppercase;
+  margin-top: 26px;
 }
 
-.pattern-item-info {
-  width: 255px;
+.pattern-info {
   line-height: 18px;
   color: var(--basic-gray);
 }
 
+.sort div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort ul {
+  display: flex;
+}
+
 .sort-item {
+  margin-right: 25px;
+}
+
+.sort-item:nth-child(3) {
+  margin-right: 47px;
+}
+
+.sort-item label {
   color: var(--basic-black);
   font-size: 14px;
   line-height: 18px;
+  opacity: 0.3;
 }
 
-.sort-item-disabled {
-  opacity: 0.3;
+.sort-item:hover label {
+  opacity: 0.6;
+}
+
+.sort-item:active label,
+.sort-radio:checked+label {
+  opacity: 1;
+}
+
+.sort-item-arrow label {
+  opacity: 0.2;
+}
+
+.sort-item-arrow:hover label {
+  opacity: 1;
+}
+
+.sort-item-arrow:active path,
+.sort-radio-arrow:checked+label path {
+  fill: #231f20;
+}
+
+.sort-radio-arrow:checked+label {
+  opacity: 1;
+}
+
+.sort-item-arrow:last-child {
+  margin-left: 18px;
 }
 
 .patterns-pagination {
