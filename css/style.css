@@ -100,6 +100,19 @@ figure {
   margin: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Container */
 
 .container {
@@ -151,6 +164,7 @@ figure {
   display: flex;
   justify-self: center;
   margin-top: 75px;
+  flex-wrap: wrap;
 }
 
 .site-nav .link {
@@ -220,7 +234,7 @@ figure {
   background-repeat: no-repeat;
   background-position: right;
   background-size: 760px 431px;
-  height: 431px;
+  min-height: 431px;
 }
 
 .feature-item:nth-child(2) {
@@ -432,12 +446,10 @@ figure {
   border: none;
   border-radius: 3px;
   font-size: 16px;
-  line-height: 50px;
   font-weight: 500;
   color: var(--basic-white);
   background-color: var(--basic-red);
-  padding: 0 40px;
-  height: 50px;
+  padding: 14px 40px;
 }
 
 .slider-controls {
@@ -483,17 +495,19 @@ figure {
 }
 
 .btn-see-more {
-  padding: 0 54px;
+  margin-top: 25px;
+  padding: 0 52px;
+  padding-top: 14px;
+  margin-bottom: 80px;
   width: max-content;
-  margin-bottom: 60px;
 }
 
 .btn-write-us {
-  padding: 0 44px;
+  padding: 14px 44px;
 }
 
 .btn-pattern {
-  padding: 0 72px;
+  padding: 14px 72px;
   margin-bottom: 44px;
   margin-top: 15px;
 }
@@ -527,11 +541,11 @@ figure {
 }
 
 .btn-next {
-  padding: 0 77px;
+  padding: 14px 77px;
 }
 
 .btn-submit {
-  padding: 0 88px;
+  padding: 14px 88px;
 }
 
 .btn-catalog {
@@ -550,14 +564,14 @@ figure {
 }
 
 .btn-pagination {
-  padding: 0;
-  min-width: 50px;
+  padding: 14px 20px;
 }
 
 .btn-pagination:active,
 .btn-pagination-active {
   background-color: var(--basic-white);
   border: 3px solid var(--focus-extra-white);
+  padding: 11px 17px;
   box-shadow: none;
 }
 
@@ -742,7 +756,6 @@ figure {
 
 .patterns {
   margin-top: 50px;
-  margin-bottom: 60px;
 }
 
 .patterns-list {
@@ -823,6 +836,7 @@ figure {
 .sort div {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .sort ul {
@@ -876,10 +890,12 @@ figure {
 
 .patterns-pagination {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .patterns-pagination-item {
   margin-right: 11px;
+  margin-bottom: 60px;
 }
 
 .patterns-pagination-item:last-child {
@@ -913,7 +929,7 @@ figure {
   color: var(--basic-gray);
 }
 
-.map-pic {
+.map iframe {
   width: 100%;
 }
 
@@ -994,14 +1010,65 @@ figure {
 
 /* Modal */
 
+.modal {
+  position: fixed;
+  left: calc(50% - 480px);
+  bottom: 13.75%;
+  background-color: white;
+  padding: 0px 100px;
+  padding-top: 63px;
+  padding-bottom: 84px;
+  width: 760px;
+  min-height: 440px;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
 .modal .title {
   font-size: 45px;
   line-height: 52.73px;
+  color: var(--basic-black);
+  margin: 0;
+  margin-bottom: 37px;
 }
 
 .modal label {
   line-height: 18px;
   font-weight: 700;
+  color: var(--basic-black);
+}
+
+.modal-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 34px;
+}
+
+.modal-row .modal-form-item {
+  width: 360px;
+}
+
+.modal-form {
+  margin-top: 34px;
+}
+
+.modal-form-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.modal-form-item label {
+  width: 100%;
+  margin-bottom: 9px;
+}
+
+.modal-form-item input {
+  height: 45px;
+}
+
+.modal-form-item textarea {
+  height: 110px;
 }
 
 .modal-form-item input,
@@ -1010,6 +1077,7 @@ figure {
   background-color: transparent;
   border: 2px solid var(--border-gray-normal);
   border-radius: 3px;
+  width: 100%;
 }
 
 .modal-form-item input::-webkit-input-placeholder,
@@ -1019,6 +1087,7 @@ figure {
   line-height: 18px;
   color: var(--basic-extra-dark);
   opacity: 0.5;
+  padding: 13px;
 }
 
 .modal-form-item input:hover,
@@ -1049,6 +1118,20 @@ figure {
 
 .modal-close {
   opacity: 0.3;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 78px;
+  right: 90px;
+  background-image: url(../img/decor/close-cross.png);
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 21px;
+}
+
+.modal-form .btn {
+  margin-top: 47px;
+  padding: 14px 82px;
 }
 
 .modal-close:hover {
@@ -1057,17 +1140,4 @@ figure {
 
 .modal-close:active {
   opacity: 0.1;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
