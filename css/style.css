@@ -806,6 +806,15 @@ figure {
   margin-top: 26px;
 }
 
+.pattern-title:hover {
+  color: var(--basic-red);
+}
+
+.pattern-title:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
 .pattern-info {
   line-height: 18px;
   color: var(--basic-gray);
