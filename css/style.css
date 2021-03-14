@@ -137,7 +137,7 @@ figure {
 /* Main navigation */
 
 .main-header-logo {
-  margin-top: 49px;
+  margin-top: 48px;
 }
 
 .main-header-logo:hover path {
@@ -163,8 +163,9 @@ figure {
 .site-nav {
   display: flex;
   justify-self: center;
-  margin-top: 75px;
+  margin-top: 77px;
   flex-wrap: wrap;
+  margin-left: 15px;
 }
 
 .site-nav .link {
@@ -174,20 +175,29 @@ figure {
 }
 
 .site-nav li:last-child {
-  margin-right: -45px;
+  margin-right: 0;
 }
 
 .site-nav .link,
 .cart {
   color: var(--basic-black);
+  font-weight: 500;
 }
 
 .cart {
-  margin-top: 75px;
+  margin-top: 77px;
+  padding-left: 40px;
+  position: relative;
 }
 
-.cart img {
-  padding-right: 25px;
+.cart::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/decor/cart-icon.svg);
+  top: 5px;
+  left: 0;
 }
 
 .site-nav .link:hover,
@@ -218,7 +228,7 @@ figure {
   font-weight: 500;
   text-align: center;
   margin: 0;
-  padding: 70px 0 110px 0;
+  padding: 69px 0 108px 5px;
   background-color: var(--basic-extra-white);
 }
 
@@ -232,9 +242,8 @@ figure {
 .feature-item {
   background-image: url(../img/content/nerds-index-slide1.png);
   background-repeat: no-repeat;
-  background-position: right;
-  background-size: 760px 431px;
-  min-height: 431px;
+  background-position: right bottom;
+  height: 420px;
 }
 
 .feature-item:nth-child(2) {
@@ -251,8 +260,8 @@ figure {
   font-weight: 500;
   color: var(--basic-black);
   width: 538px;
-  margin-top: 78px;
-  margin-bottom: 25px;
+  margin-top: 68px;
+  margin-bottom: 16px;
 }
 
 .feature-item .text {
@@ -371,16 +380,23 @@ figure {
 }
 
 .filter-group .filter-option:first-child {
-  margin-top: 16px;
+  margin-top: 12px;
 }
 
 .filter-group .filter-option:last-child {
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .filter-option {
   padding-left: 36px;
-  margin-top: 20px;
+}
+
+.filter-radio {
+  margin-top: 15px;
+}
+
+.filter-checkbox {
+  margin-bottom: 16px;
 }
 
 .filter-option label {
@@ -455,13 +471,13 @@ figure {
   font-weight: 500;
   color: var(--basic-white);
   background-color: var(--basic-red);
-  padding: 14px 40px;
+  padding: 13px 39px;
 }
 
 .slider-controls {
   position: absolute;
-  bottom: 93px;
-  left: 552px;
+  bottom: 94px;
+  left: 548px;
   z-index: 20;
   display: flex;
   width: 88px;
@@ -503,13 +519,14 @@ figure {
 .btn-see-more {
   margin-top: 25px;
   padding: 0 52px;
-  padding-top: 14px;
+  padding-top: 13px;
   margin-bottom: 80px;
   width: max-content;
 }
 
 .btn-write-us {
-  padding: 14px 44px;
+  padding: 13px 42px;
+  margin-top: 22px;
 }
 
 .btn-pattern {
@@ -593,12 +610,17 @@ figure {
 }
 
 .service-item {
-  margin-right: 100px;
+  margin-right: 101px;
   margin-bottom: 80px;
 }
 
 .service-item:nth-child(3n) {
   margin-right: 0;
+}
+
+.service-item figure {
+  width: 300px;
+  height: 146px;
 }
 
 .service-item:nth-child(1) figure {
@@ -619,10 +641,14 @@ figure {
   text-transform: uppercase;
   font-weight: 700;
   color: var(--basic-black);
+  margin-top: 26px;
+  margin-bottom: 18px;
 }
 
 .service-item .text {
   line-height: 24px;
+  margin-bottom: 30px;
+
 }
 
 /* About */
@@ -634,7 +660,7 @@ figure {
 }
 
 .about-column-left {
-  margin-top: 73px;
+  margin-top: 72px;
 }
 
 .about-column-left .caption {
@@ -645,9 +671,9 @@ figure {
 }
 
 .about-column-left .text {
-  margin-top: 32px;
+  margin-top: 31px;
   line-height: 24px;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 }
 
 .about-column-left .list-title {
@@ -658,8 +684,8 @@ figure {
 
 .about-column-left-list li {
   position: relative;
-  margin-top: 25px;
-  padding-left: 32px;
+  margin-top: 24px;
+  padding-left: 33px;
   line-height: 24px;
 }
 
@@ -675,7 +701,7 @@ figure {
 
 .about-column-right {
   margin-top: 39px;
-  margin-bottom: 75px;
+  margin-bottom: 76px;
 }
 
 .about-column-right .list-title {
@@ -685,7 +711,7 @@ figure {
   color: var(--basic-black);
   display: block;
   text-align: center;
-  margin-top: 37px;
+  margin-top: 30px;
   margin-bottom: 31px;
 }
 
@@ -761,7 +787,7 @@ figure {
 /* Patterns */
 
 .patterns {
-  margin-top: 50px;
+  margin-top: 54px;
 }
 
 .patterns-list {
@@ -818,11 +844,10 @@ figure {
 
 .pattern-title {
   font-size: 18px;
-  line-height: 30px;
   font-weight: 700;
   color: var(--basic-black);
   text-transform: uppercase;
-  margin-top: 26px;
+  margin-top: 25px;
 }
 
 .pattern-title:hover {
@@ -851,8 +876,9 @@ figure {
   flex-wrap: wrap;
 }
 
-.sort ul {
+.sort-list {
   display: flex;
+  margin-top: 4px;
 }
 
 .sort-item {
@@ -897,12 +923,13 @@ figure {
 }
 
 .sort-item-arrow:last-child {
-  margin-left: 18px;
+  margin-left: 19px;
 }
 
 .patterns-pagination {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 22px;
 }
 
 .patterns-pagination-item {
@@ -918,6 +945,7 @@ figure {
 
 .map {
   position: relative;
+  margin-bottom: 56px;
 }
 
 .contacts {
@@ -926,7 +954,7 @@ figure {
   position: absolute;
   background-color: var(--basic-white);
   left: calc(50% - 1160px / 2);
-  top: calc(50% - 290px / 2);
+  top: calc(50% - 315px / 2);
 }
 
 .contacts .caption {
@@ -935,8 +963,12 @@ figure {
   font-weight: 700;
 }
 
+.contacts .address {
+  margin-top: 22px;
+}
+
 .contacts .address,
-.phone {
+.contacts .phone {
   line-height: 18px;
   color: var(--basic-gray);
 }
@@ -953,13 +985,9 @@ figure {
   column-gap: 140px;
 }
 
-.social-col {
-  align-self: center;
-}
-
 .social-list {
   display: flex;
-  margin: 68px 0;
+  margin-top: 5px;
 }
 
 .social .caption {
@@ -968,8 +996,13 @@ figure {
   font-weight: 700;
 }
 
+.social-col:nth-child(2) {
+  margin-top: 11px;
+}
+
 .social .text {
   line-height: 22px;
+  margin-top: 11px;
 }
 
 .social-item:not(:last-child) {
