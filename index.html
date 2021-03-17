@@ -27,10 +27,10 @@
           </svg>
         </a>
         <ul class="site-nav">
-          <li><a class="link" href="#">Студия</a></li>
-          <li><a class="link" href="#">Клиенты</a></li>
-          <li><a class="link" href="catalog.html">Магазин</a></li>
-          <li><a class="link" href="#">Контакты</a></li>
+          <li class="site-nav-item"><a class="link" href="#">Студия</a></li>
+          <li class="site-nav-item"><a class="link" href="#">Клиенты</a></li>
+          <li class="site-nav-item"><a class="link" href="catalog.html">Магазин</a></li>
+          <li class="site-nav-item"><a class="link" href="#">Контакты</a></li>
         </ul>
         <a class="cart" href="#">Корзина</a>
       </div>
@@ -46,28 +46,34 @@
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="features-list">
           <li class="feature-item slide slide-current">
-            <h3 class="title">Долго, дорого, скрупулезно.</h3>
-            <p class="text">
-              Математически выверенный дизайн<br>
-              для вашего сайта или мобильного приложения.
-            </p>
-            <a class="btn btn-see-more" href="#">Узнать больше</a>
+            <div class="slide-description">
+              <h3 class="title">Долго, дорого, скрупулезно.</h3>
+              <p class="text">
+                Математически выверенный дизайн<br>
+                для вашего сайта или мобильного приложения.
+              </p>
+              <a class="btn btn-see-more" href="#">Узнать больше</a>
+            </div>
           </li>
           <li class="feature-item slide">
-            <h3 class="title">Любим математику как никто другой</h3>
-            <p class="text">
-              Никакого креатива, только математические формулы <br>
-              для расчета идеальных пропорций.
-            </p>
-            <a class="btn btn-see-more" href="#">Узнать больше</a>
+            <div class="slide-description">
+              <h3 class="title">Любим математику как никто другой</h3>
+              <p class="text">
+                Никакого креатива, только математические формулы <br>
+                для расчета идеальных пропорций.
+              </p>
+              <a class="btn btn-see-more" href="#">Узнать больше</a>
+            </div>
           </li>
           <li class="feature-item slide">
-            <h3 class="title">Только ночь, <br>только хардкор</h3>
-            <p class="text">
-              Работать днем, как все? Мы против этого. <br>
-              Ближе к полуночи работа только начинается.
-            </p>
-            <a class="btn btn-see-more" href="#">Узнать больше</a>
+            <div class="slide-description">
+              <h3 class="title">Только ночь, <br>только хардкор</h3>
+              <p class="text">
+                Работать днем, как все? Мы против этого. <br>
+                Ближе к полуночи работа только начинается.
+              </p>
+              <a class="btn btn-see-more" href="#">Узнать больше</a>
+            </div>
           </li>
         </ul>
         <div class="slider-controls">
@@ -140,20 +146,20 @@
         <img src="img/content/nerds-illustration.png" width="360" height="208"
           alt="Логотип Нёрдс на фоне разноцветных линий и кругов">
         <span class="list-title">С 2004 года любим точность во всем: </span>
-        <div class="about-column-right-list">
-          <ul class="list-column">
-            <li>146<span class="procent">%</span></li>
-            <li>Уровень самоотдачи</li>
-          </ul>
-          <ul class="list-column">
-            <li>100<span class="procent">%</span></li>
-            <li>Соблюдение сроков</li>
-          </ul>
-          <ul class="list-column">
-            <li>50<span class="procent">%</span></li>
-            <li>Минимальная предоплата</li>
-          </ul>
-        </div>
+        <ul class="about-column-right-list">
+          <li class="list-column">
+            <div>146<span class="procent">%</span></div>
+            <div>Уровень самоотдачи</div>
+          </li>
+          <li class="list-column">
+            <div>100<span class="procent">%</span></div>
+            <div>Соблюдение сроков</div>
+          </li>
+          <li class="list-column">
+            <div>50<span class="procent">%</span></div>
+            <div>Минимальная предоплата</div>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -161,27 +167,32 @@
       <h2 class="visually-hidden">Партнеры</h2>
       <ul class="partners-list">
         <li class="partner-item">
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/content/logo-1.png" width="199" height="68" alt="Логотип Html Academy">
-          </a>
+          <div class="partner-wrapper">
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="img/content/logo-1.png" width="199" height="68" alt="Логотип Html Academy">
+            </a>
+          </div>
         </li>
-        <li class="buffer"></li>
         <li class="partner-item">
-          <a href="#">
-            <img src="img/content/logo-2.png" width="209" height="90" alt="Логотип Borodinski">
-          </a>
+          <div class="partner-wrapper">
+            <a href="#">
+              <img src="img/content/logo-2.png" width="209" height="90" alt="Логотип Borodinski">
+            </a>
+          </div>
         </li>
-        <li class="buffer"></li>
         <li class="partner-item">
-          <a href="#">
-            <img src="img/content/logo-3.png" width="185" height="52" alt="Логотип Pink">
-          </a>
+          <div class="partner-wrapper">
+            <a href="#">
+              <img src="img/content/logo-3.png" width="185" height="52" alt="Логотип Pink">
+            </a>
+          </div>
         </li>
-        <li class="buffer"></li>
         <li class="partner-item">
-          <a href="#">
-            <img src="img/content/logo-4.png" width="173" height="84" alt="Логотип Mishka">
-          </a>
+          <div class="partner-wrapper">
+            <a href="#">
+              <img src="img/content/logo-4.png" width="173" height="84" alt="Логотип Mishka">
+            </a>
+          </div>
         </li>
       </ul>
     </section>
@@ -191,7 +202,8 @@
 
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <div class="contacts container">
+      <section class="contacts container">
+        <h3 class="visually-hidden">Контакты</h3>
         <span class="caption">NЁRDS DESIGN STUDIO</span>
         <p class="address">
           191186, Санкт-Петербург, <br>
@@ -199,7 +211,7 @@
           <a class="phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
         </p>
         <a class="btn btn-write-us" href="#">Напишите нам</a>
-      </div>
+      </section>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1615485147047!5m2!1sru!2sru"
         width="1140" height="416" style="border:0;" allowfullscreen="" loading="lazy"
@@ -211,13 +223,13 @@
       <div class="social-col">
         <h2 class="visually-hidden">Соц-сети</h2>
         <ul class="social-list">
-          <li class="social-item">
+          <li class="social-item vk">
             <a class="social-link" href="#" aria-label="Вконтакте"></a>
           </li>
-          <li class="social-item">
+          <li class="social-item fb">
             <a class="social-link" href="#" aria-label="Фейсбук"></a>
           </li>
-          <li class="social-item">
+          <li class="social-item inst">
             <a class="social-link" href="#" aria-label="Инстаграм"></a>
           </li>
         </ul>
