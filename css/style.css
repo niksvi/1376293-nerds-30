@@ -468,6 +468,7 @@ ul {
 .btn {
   font: inherit;
   display: inline-block;
+  vertical-align: middle;
   text-transform: uppercase;
   border: none;
   border-radius: 3px;
