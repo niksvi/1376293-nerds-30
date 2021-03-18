@@ -309,25 +309,28 @@
 
   <section class="modal">
     <h2 class="title">Напишите нам</h2>
-    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    <button class="modal-close" type="button" aria-label="Закрыть форму Напишите нам"></button>
     <form class="modal-form" method="POST" action="https://echo.htmlacademy.ru">
       <div class="modal-row">
         <p class="modal-form-item">
           <label for="modal-form-name">Ваше имя:</label>
-          <input id="modal-form-name" class="" type="text" name="name" placeholder="Имя Фамилия">
+          <input id="modal-form-name" class="modal-login" type="text" name="name" placeholder="Имя Фамилия">
         </p>
         <p class="modal-form-item">
           <label for="modal-form-email">Ваш email:</label>
-          <input id="modal-form-email" type="email" name="email" placeholder="email@example.com">
+          <input id="modal-form-email" class="modal-pass" type="email" name="email" placeholder="email@example.com">
         </p>
       </div>
       <p class="modal-form-item">
         <label for="modal-form-text">Текст письма:</label>
-        <textarea id="modal-form-text" name="text-email" placeholder="В свободной форме"></textarea>
+        <textarea id="modal-form-text" class="modal-text" name="text-email" placeholder="В свободной форме"></textarea>
       </p>
       <button class="btn" type="submit">Отправить</button>
     </form>
   </section>
+
+  <script src="js/write-us.js"></script>
+
 </body>
 
 </html>
