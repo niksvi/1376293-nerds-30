@@ -96,10 +96,6 @@ ul {
   padding: 0;
 }
 
-figure {
-  margin: 0;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -159,9 +155,9 @@ figure {
 
 .site-nav {
   display: flex;
-  margin-top: 67px;
+  margin-top: 75px;
   flex-wrap: wrap;
-  margin-left: 200px;
+  margin-left: 202px;
 }
 
 .site-nav-item,
@@ -177,7 +173,7 @@ figure {
 }
 
 .site-nav-item {
-  margin-right: 44px;
+  margin-right: 46px;
 }
 
 .site-nav-item:last-child {
@@ -191,7 +187,7 @@ figure {
 }
 
 .cart {
-  margin-top: 77px;
+  margin-top: 75px;
   padding-left: 40px;
   position: relative;
 }
@@ -202,8 +198,8 @@ figure {
   width: 15px;
   height: 15px;
   background-image: url(../img/decor/cart-icon.svg);
-  top: 5px;
-  left: 0;
+  top: 7px;
+  left: -1px;
 }
 
 .site-nav .link:hover,
@@ -232,7 +228,7 @@ figure {
   font-weight: 500;
   text-align: center;
   margin: 0;
-  padding: 69px 0 108px 5px;
+  padding: 70px 0 108px 0;
   background-color: var(--basic-extra-white);
 }
 
@@ -268,7 +264,7 @@ figure {
 
 .feature-item .text {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
   line-height: 24px;
 }
 
@@ -400,7 +396,7 @@ figure {
 }
 
 .filter-radio {
-  margin-top: 20px;
+  margin-top: 16px;
 }
 
 .filter-checkbox {
@@ -486,7 +482,7 @@ figure {
   position: absolute;
   bottom: 97px;
   left: 556px;
-  z-index: 20;
+  z-index: 19;
   display: flex;
   width: 88px;
   justify-content: space-between;
@@ -530,13 +526,13 @@ figure {
 
 .btn-write-us {
   padding: 13px 45px;
-  margin-top: 22px;
+  margin-top: 21px;
 }
 
 .btn-pattern {
-  padding: 13px 72px;
-  margin-bottom: 40px;
-  margin-top: 18px;
+  padding: 13px 73px;
+  margin-bottom: 44px;
+  margin-top: 17px;
 }
 
 .btn-pattern:focus {
@@ -568,11 +564,12 @@ figure {
 }
 
 .btn-next {
-  padding: 14px 77px;
+  padding: 13px 78px;
 }
 
 .btn-submit {
-  padding: 14px 88px;
+  margin-top: 3px;
+  padding: 13px 88px;
 }
 
 .btn-catalog {
@@ -591,14 +588,14 @@ figure {
 }
 
 .btn-pagination {
-  padding: 14px 20px;
+  padding: 13px 20px;
 }
 
 .btn-pagination:active,
 .btn-pagination-active {
   background-color: var(--basic-white);
   border: 3px solid var(--focus-extra-white);
-  padding: 11px 17px;
+  padding: 10px 17px;
   box-shadow: none;
 }
 
@@ -618,20 +615,20 @@ figure {
   margin-right: 0;
 }
 
-.service-item figure {
+.service-item div {
   width: 300px;
   height: 146px;
 }
 
-.service-item:nth-child(1) figure {
+.service-item:nth-child(1) div {
   background-color: var(--basic-red);
 }
 
-.service-item:nth-child(2) figure {
+.service-item:nth-child(2) div {
   background-color: var(--basic-green);
 }
 
-.service-item:nth-child(3) figure {
+.service-item:nth-child(3) div {
   background-color: var(--basic-yellow);
 }
 
@@ -641,13 +638,13 @@ figure {
   text-transform: uppercase;
   font-weight: 700;
   color: var(--basic-black);
-  margin-top: 26px;
-  margin-bottom: 18px;
+  margin-top: 25px;
+  margin-bottom: 15px;
 }
 
 .service-item .text {
   line-height: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 /* About */
@@ -656,7 +653,7 @@ figure {
   display: grid;
   grid-template-columns: auto 360px;
   padding: 0;
-  padding-bottom: 76px;
+  padding-bottom: 72px;
   border-top: 2px solid var(--basic-extra-white);
 }
 
@@ -672,9 +669,9 @@ figure {
 }
 
 .about-column-left .text {
-  margin-top: 32px;
+  margin-top: 33px;
   line-height: 24px;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 }
 
 .about-column-left .list-title {
@@ -686,7 +683,7 @@ figure {
 .about-column-left-list li {
   position: relative;
   margin-top: 24px;
-  padding-left: 33px;
+  padding-left: 35px;
   line-height: 24px;
 }
 
@@ -749,7 +746,7 @@ figure {
 /* Partners */
 
 .partners {
-  padding: 50px 0px 35px 0px;
+  padding: 48px 0px 36px 0px;
   margin-bottom: 80px;
   border-top: 2px solid var(--basic-extra-white);
   border-bottom: 2px solid var(--basic-extra-white);
@@ -779,6 +776,10 @@ figure {
   justify-content: center;
   align-items: center;
   position: relative;
+}
+
+.partner-item:first-child {
+  padding-top: 10px;
 }
 
 .partner-item:not(:nth-child(4n))::after {
@@ -875,7 +876,8 @@ figure {
   font-weight: 700;
   color: var(--basic-black);
   text-transform: uppercase;
-  margin-top: 25px;
+  margin-top: 28px;
+  margin-bottom: 2px;
 }
 
 .pattern-title:hover {
@@ -957,12 +959,12 @@ figure {
 .patterns-pagination {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 22px;
+  margin-top: 25px;
 }
 
 .patterns-pagination-item {
-  margin-right: 11px;
-  margin-bottom: 60px;
+  margin-right: 12px;
+  margin-bottom: 59px;
 }
 
 .patterns-pagination-item:last-child {
@@ -1011,7 +1013,7 @@ figure {
   display: grid;
   grid-template-columns: min-content 1fr;
   column-gap: 140px;
-  padding-bottom: 68px;
+  padding-bottom: 57px;
 }
 
 .social-list {
@@ -1082,7 +1084,7 @@ figure {
 .modal {
   position: fixed;
   left: calc(50% - 480px);
-  bottom: 13.5%;
+  bottom: 13%;
   background-color: white;
   padding: 0px 100px;
   padding-top: 63px;
@@ -1090,6 +1092,7 @@ figure {
   width: 760px;
   min-height: 440px;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  z-index: 20;
   display: none;
 }
 
@@ -1098,7 +1101,7 @@ figure {
   line-height: 52.73px;
   color: var(--basic-black);
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 38px;
 }
 
 .modal label {
@@ -1134,10 +1137,13 @@ figure {
 
 .modal-form-item input {
   max-height: 50px;
+  padding: 11px;
+  padding-left: 13px;
 }
 
 .modal-form-item textarea {
-  height: 88px;
+  height: 85px;
+  padding: 15px;
 }
 
 .modal-form-item input,
@@ -1147,7 +1153,6 @@ figure {
   border: 2px solid var(--border-gray-normal);
   border-radius: 3px;
   width: 100%;
-  padding: 13px;
 }
 
 .modal-form-item input::-webkit-input-placeholder,
@@ -1192,7 +1197,7 @@ figure {
   position: absolute;
   top: 78px;
   right: 90px;
-  background-image: url(../img/decor/close-cross.png);
+  background-image: url(../img/decor/close-cross.svg);
   background-repeat: no-repeat;
   width: 21px;
   height: 21px;
@@ -1200,7 +1205,7 @@ figure {
 
 .modal-form .btn {
   margin-top: 48px;
-  padding: 14px 84px;
+  padding: 13px 84px;
 }
 
 .modal-close:hover {
