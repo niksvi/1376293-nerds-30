@@ -52,8 +52,10 @@
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <div class="toggle toggle-min" tabindex="0"></div>
-                <div class="toggle toggle-max" tabindex="0"></div>
+                <div class="toggle toggle-min" tabindex="0"
+                  aria-label="Ползунок фильтра стоимости, минимальное значение"></div>
+                <div class="toggle toggle-max" tabindex="0"
+                  aria-label="Ползунок фильтра стоимости, максимальное значение"></div>
               </div>
               <div class="price-controls">
                 <label class="min-price">
@@ -140,7 +142,7 @@
               </li>
               <li class="sort-item-arrow">
                 <input class="sort-radio-arrow visually-hidden" id="sort-down" type="radio" name="sortupdown"
-                  value="down" checked>
+                  value="down" aria-label="От большего к меньшему" checked>
                 <label for="sort-down">
                   <svg aria-hidden="true" focusable="false" width="11" height="10" viewBox="0 0 11 10" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -149,7 +151,8 @@
                 </label>
               </li>
               <li class="sort-item-arrow">
-                <input class="sort-radio-arrow visually-hidden" id="sort-up" type="radio" name="sortupdown" value="up">
+                <input class="sort-radio-arrow visually-hidden" id="sort-up" type="radio" name="sortupdown" value="up"
+                  aria-label="От меньшего к большему">
                 <label for="sort-up">
                   <svg aria-hidden="true" focusable="false" width="11" height="10" viewBox="0 0 11 10" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -171,7 +174,7 @@
             <div class="pattern-description">
               <h3 class="pattern-title"><a href="#">Sedona</a></h3>
               <p class="pattern-info">Информационный сайт<br> для туристов</p>
-              <button class="btn btn-pattern" type="button">9 900 ₽</button>
+              <button class="btn btn-pattern" type="button" aria-label="Добавить в корзину">9 900 ₽</button>
             </div>
           </li>
           <li class="pattern-item">
@@ -184,7 +187,7 @@
             <div class="pattern-description">
               <h3 class="pattern-title"><a href="#">Pink App</a></h3>
               <p class="pattern-info">Продуктовый лендинг<br> приложения для IOS и Android</p>
-              <button class="btn btn-pattern" type="button">9 900 ₽</button>
+              <button class="btn btn-pattern" type="button" aria-label="Добавить в корзину">9 900 ₽</button>
             </div>
           </li>
           <li class="pattern-item">
@@ -197,7 +200,7 @@
             <div class="pattern-description">
               <h3 class="pattern-title"><a href="#">Barbershop</a></h3>
               <p class="pattern-info">Сайт салона красоты.<br> Для мужчин, да.</p>
-              <button class="btn btn-pattern" type="button">9 900 ₽</button>
+              <button class="btn btn-pattern" type="button" aria-label="Добавить в корзину">9 900 ₽</button>
             </div>
           </li>
           <li class="pattern-item">
@@ -210,7 +213,7 @@
             <div class="pattern-description">
               <h3 class="pattern-title"><a href="#">Mishka</a></h3>
               <p class="pattern-info">Интернет-магазин<br> вязаных игрушек</p>
-              <button class="btn btn-pattern" type="button">9 900 ₽</button>
+              <button class="btn btn-pattern" type="button" aria-label="Добавить в корзину">9 900 ₽</button>
             </div>
           </li>
           <li class="pattern-item">
@@ -223,7 +226,7 @@
             <div class="pattern-description">
               <h3 class="pattern-title"><a href="#">A Plus</a></h3>
               <p class="pattern-info">Лендинг курсов повышения<br> квалификации</p>
-              <button class="btn btn-pattern" type="button">9 900 ₽</button>
+              <button class="btn btn-pattern" type="button" aria-label="Добавить в корзину">9 900 ₽</button>
             </div>
           </li>
           <li class="pattern-item">
@@ -236,22 +239,24 @@
             <div class="pattern-description">
               <h3 class="pattern-title"><a href="#">Кваст</a></h3>
               <p class="pattern-info">Промо-сайт производителя<br> крафтового кваса</p>
-              <button class="btn btn-pattern" type="button">9 900 ₽</button>
+              <button class="btn btn-pattern" type="button" aria-label="Добавить в корзину">9 900 ₽</button>
             </div>
           </li>
         </ul>
         <ul class="patterns-pagination">
           <li class="patterns-pagination-item">
-            <a class="btn btn-catalog btn-pagination btn-pagination-active" tabindex="0">1</a>
+            <a class="btn btn-catalog btn-pagination btn-pagination-active"
+              aria-label="Первая страница каталога шаблонов" tabindex="0">1</a>
           </li>
           <li class="patterns-pagination-item">
-            <a class="btn btn-catalog btn-pagination" tabindex="0">2</a>
+            <a class="btn btn-catalog btn-pagination" aria-label="Вторая страница каталога шаблонов" tabindex="0">2</a>
           </li>
           <li class="patterns-pagination-item">
-            <a class="btn btn-catalog btn-pagination" tabindex="0">3</a>
+            <a class="btn btn-catalog btn-pagination" aria-label="Третья страница каталога шаблонов" tabindex="0">3</a>
           </li>
           <li class="patterns-pagination-item">
-            <a class="btn btn-catalog btn-next" tabindex="0">Следующая</a>
+            <a class="btn btn-catalog btn-next" aria-label="Следующая страница каталога шаблонов"
+              tabindex="0">Следующая</a>
           </li>
         </ul>
       </section>
