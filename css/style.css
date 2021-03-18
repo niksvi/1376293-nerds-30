@@ -615,20 +615,20 @@ ul {
   margin-right: 0;
 }
 
-.service-item div {
+.service-item .service-image-wrapper {
   width: 300px;
   height: 146px;
 }
 
-.service-item:nth-child(1) div {
+.service-item:nth-child(1) .service-image-wrapper {
   background-color: var(--basic-red);
 }
 
-.service-item:nth-child(2) div {
+.service-item:nth-child(2) .service-image-wrapper {
   background-color: var(--basic-green);
 }
 
-.service-item:nth-child(3) div {
+.service-item:nth-child(3) .service-image-wrapper {
   background-color: var(--basic-yellow);
 }
 
