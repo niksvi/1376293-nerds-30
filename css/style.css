@@ -1084,6 +1084,7 @@ ul {
 
 .social-link:active {
   background-color: var(--active-red);
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .social-link:active::after {
